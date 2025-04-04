@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr3</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--  -->
+        <button id="btn_text" onclick="izm_text()">Нажми на меня</button>
+        <script>
+            function izm_text() {
+                let btn_iz = document.getElementById('btn_text');
+                btn_iz.textContent = 'Вы нажали на меня!';
+            }
+        </script>
+
+        <!--  -->
+        <div id="square" style="width: 100px; height: 100px; background-color: aqua; position: absolute;">
+            <script>
+                const square = document.getElementById('square');
+                document.addEventListener('mousemove', function (event) {
+                    square.style.left = event.clientX + "px";
+                    square.style.top = event.clientY + "px";
+                })
+            </script>
+        </div>
+    </div>
+
+    <img src="image/image.png" alt="" style="width: 800px; object-fit: cover; margin-top: 10px;">
+</body>
+
+</html>
