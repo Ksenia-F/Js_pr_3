@@ -19,7 +19,8 @@
         </script>
 
         <!--  -->
-        <div id="square" style="width: 100px; height: 100px; background-color: aqua; position: absolute;">
+        <div id="square" style="width: 100px; height: 100px; background-color: aqua; position: absolute; pointer-events: none;">
+        </div>
             <script>
                 const square = document.getElementById('square');
                 document.addEventListener('mousemove', function (event) {
@@ -27,7 +28,6 @@
                     square.style.top = event.clientY + "px";
                 })
             </script>
-        </div>
     </div>
 
     <img src="image/image.png" alt="" style="width: 800px; object-fit: cover; margin-top: 10px;">
